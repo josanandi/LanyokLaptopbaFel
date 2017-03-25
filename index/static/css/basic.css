@@ -1,0 +1,90 @@
+#logo{
+  background-color: #ff6699;
+  opacity: 0.8;
+}
+
+#motto {
+  margin-left: 25px;
+}
+/*#home_images{
+  position: absolute;
+  top:50%;
+  left:50%;
+}*/
+#body {
+   padding:10px;
+   padding-bottom:60px;   /* Height of the footer */
+}
+
+ .footer
+{
+position: relative;
+margin-top: -150px; /* negative value of footer height */
+height: 150px;
+clear:both;
+padding-top:20px;
+color:#fff;
+}
+
+
+/*javascript*/
+
+#first_javascript{
+  min-height: 300px;
+  background-color: #ffffe6;
+}
+
+#second_javascript{
+  min-height: 300px;
+  background-color: #ffffcc;
+}
+
+#third_javascript{
+  min-height: 300px;
+  background-color: #ffff66;
+}
+
+#fourth_javascript{
+  min-height: 300px;
+  background-color: #ff9966;
+}
+
+#fifth_javascript{
+  min-height: 300px;
+  background-color: #ff6600;
+}
+
+#sixth_javascript{
+  min-height: 300px;
+  background-color: #ff6666;
+}
+
+#seventh_javascript{
+  min-height: 300px;
+  background-color: #ff6699;
+}
+
+#eighth_javascript{
+  min-height: 300px;
+  background-color: #ff3399;
+}
+
+#ninth_javascript{
+  min-height: 300px;
+  background-color: #ff33cc;
+}
+
+#tenth_javascript{
+  min-height: 300px;
+  background-color: #ff00ff ;
+}
+
+#eleventh_javascript{
+  min-height: 300px;
+  background-color: #cc00ff;
+}
+
+#twelfth_javascript{
+  min-height: 300px;
+  background-color: #9900cc;
+}
