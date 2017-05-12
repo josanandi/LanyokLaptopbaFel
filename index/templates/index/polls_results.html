@@ -1,0 +1,16 @@
+{% extends 'index/basic.html' %}
+{% block content %}
+
+<h3> A "{{question.question_text}}" kérdés eddigi eredményei</h3>
+
+<ul>
+{% for choice in question.choice_set.all %}
+    {% if choice.text_test %}
+      <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }} -- {{choice.votes_text}}</li>
+    {% else %}
+      <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
+    {% endif %}
+{% endfor %}
+</ul>
+
+{% endblock %}

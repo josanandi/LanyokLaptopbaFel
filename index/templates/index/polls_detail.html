@@ -1,0 +1,27 @@
+{% extends 'index/basic.html' %}
+{% block content %}
+<h1>{{ question.question_text }}</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form action="{% url 'index:vote' question.id %}" method="post">
+{% csrf_token %}
+{% for choice in question.choice_set.all %}
+    {% if choice.text_test %}
+      <input type='radio' name='choice' id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
+      <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label>
+      <input type='text' name='choice_input' value="{{choice_input}}"  />
+
+
+    {% else %}
+      <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
+      <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br />
+
+    {% endif %}
+{% endfor %}
+<br />
+<input type="submit" value="Vote" />
+</form>
+
+
+{% endblock %}

@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-	<title>Lányok, Laptopba Fel!</title>
+	<title>{%block title%}{%endblock%}
+		</title>
 	<meta charset="utf-8" />
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -12,32 +13,43 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
 {% load staticfiles %}
 	<link rel="stylesheet" href="{% static '/css/basic.css' %}" type = "text/css"/>
 </head>
 
 <body class="body" id="body" style="background-color:#f6f6f6">
-	<div class="container-fluid" style="min-height:95%; ">
-    <header>
-      <div class="container-fluid"> <!-- Ezzel kell csinalni valamit, vagy marad igy.. -->
-        <table class="table">
-        </table>
-      </div>
-      <div class="container-fluid">
+	<div class='row'>
+	<div class='col-md-1'>
+	</div>
 
-      	<ul class="nav nav-tabs"> <!-- Write your comments here Ez a menu -->
-          <li role="presentation" class="active"><a href="/#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
-          <li role="presentation"><a href="#">Info</a></li>
-          <li role="presentation"><a href="#">About me</a></li>
-          <li role="presentation"><a href="#">Contact</a></li>
+	<div class='col-xs-12 col-md-10'>
+
+	<div class="container-fluid" style="min-height:95%; ">
+
+    <header>
+      <div class="container-fluid">
+				<div class=>
+					<a href="/#"><img  src={% static '/img/logo.png' %} class='responsive-img' alt='Lányok, Laptopba Fel!'style="float:left;width:300px;height:200px" /> </a>
+					</div>
+					<br />
+					<br />
+					<hr />
+					<br />
+
+      	<ul class="nav nav-tabs" > <!-- Write your comments here Ez a menu -->
+          <li role="presentation"></li>
+          <li role="presentation"><a href="/blog/">Blog</a></li>
+          <li role="presentation"><a href="/about-me/">About me</a></li>
+          <li role="presentation"><a href="/contact/">Contact</a></li>
+					<li role="presentation"><a href="/contact/mentorsandsupporters/">Mentors&Supporters</a></li>
         </ul>
 
       </div>
 		</header>
-        <div class="jumbotron" id="logo"> <!-- Ez a logo -->
-					<h2 id="motto">Lányok, Laptopba Fel!</h2>
-        </div>
+
 
 			<div class="col-sm-10" >
 						<div class='container-fluid'>
@@ -48,13 +60,21 @@
 					  </div>
 		</div>
 
-
+		<hr />
+		<br />
 
   <footer  class="footer">
 		<div class="container-fluid" style='margin-left:15px'>
-			<p><a href="#" target="blank">Contact</a> | <a href="#" target="blank">LinkedIn</a> | <a href="#" target="blank">Twitter</a> | <a href="#" target="blank">Google+</a></p>
+			<p><a href="/contact/" target="blank">Contact</a> | <a href="#" target="blank">Facebook</a> | <a href="#" target="blank">Meetup</a> | <a href="#" target="blank">YouTube</a></p>
 		</div>
 	</footer>
+
+	<div class='col-md-1'>
+
+	</div>
+
+	</div>
+	</div>
 </body>
 
 

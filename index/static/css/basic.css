@@ -1,19 +1,19 @@
-#logo{
-  background-color: #ff6699;
-  opacity: 0.8;
+body {
+  background-color: #ffffff !important;
+  font-family: 'Sans Source Pro', sans-serif;
+
 }
 
-#motto {
-  margin-left: 25px;
+a {
+  text-decoration: none;
+  color:#ff6699;
 }
-/*#home_images{
-  position: absolute;
-  top:50%;
-  left:50%;
-}*/
+
 #body {
    padding:10px;
    padding-bottom:60px;   /* Height of the footer */
+
+
 }
 
  .footer
@@ -87,4 +87,8 @@ color:#fff;
 #twelfth_javascript{
   min-height: 300px;
   background-color: #9900cc;
+}
+
+.tematikalista {
+  float:left;
 }

@@ -1,0 +1,48 @@
+
+
+{% extends 'index/basic.html' %}
+
+{% block content %}
+    <h1>Mentorok, támogatók kerestetik</h1>
+
+    <h4>
+
+    Bármilyen nemű, életkorú, származású, hátterű lelkes, turelmes mentorok és támogatók jelentkezését várom. <br />
+
+    Sajnos anyagi ellenszolgáltatást nem tudok/tudunk biztosítani.</h4>
+    De több ok is eszembe jutott amiért érdemes jelentkezni:</h5>
+    <ul>
+      <li>
+        Saját tudásodat tanítás útján tovább tudod mélyíteni
+      </li>
+
+      <li>
+        Előadói készségeidet tudod fejleszteni
+      </li>
+        <li>
+        Saját projektedet, szolgáltatásodat tudod promoválni
+        </li>
+        <li>
+        Saját projektedhez a csoportot is használhatod. Pl. kiirhatsz "házifeladatokat", majd a jól sikerült, neked tetsző megoldásokat implementálhatod.
+        </li>
+        <li>
+        Amennyiben munkatársakat keresel, a csoportokból  megpróbálhatod "elcsábítani"  a neked szimpatkus jelölteket.
+        </li>
+        <li>
+        Elősegíted a nőtársaid integrációját a tech világában.
+        </li>
+        <li>
+          Ingyen kávé
+        </li>
+        <li>
+          És ha mindez nem lenne elég, akkor be fogjuk vetni a jó, öreg vállveregetést.
+        </li>
+    </ul>
+    <h1>Jelentkezz itt!</h1>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ formmentor.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+
+
+{% endblock %}
